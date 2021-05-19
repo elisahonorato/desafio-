@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="style.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <body>
+      <p class="boton" class="active"><a href="index.html">Home</a></p>
+      <h1>Process Images</h1>
+      <!--Picsart-->
+
+      <div>
+         <h3>Picsart</h3>
+         <div>
+            <h5><strong> Paso 1 - </strong> Averiguar si Cinema 4D es la mejor herramienta para animación 3D.</h5>
+            <h5><strong> Paso 2 - </strong>  Descargarse el(los) programa(s) que se requiera(n). </h5>
+            <h5><strong> Paso 3 - </strong>  Descargar el programa y aprender a modelar.
+               *Bonus track (+0.5): Definir qué objeto quiero hacer para la etapa de Amateur.
+            </h5>
+            </div>
+      <div class="row">
+         <div class="column">
+            <img src="images/img1.jpg" style="width:100%" onclick="openModal1();currentSlide(1)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img2.jpg" style="width:100%" onclick="openModal1();currentSlide(2)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img3.jpg" style="width:100%" onclick="openModal1();currentSlide(3)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img4.jpg" style="width:100%" onclick="openModal1();currentSlide(4)" class="hover-shadow cursor">
+         </div>
+      </div>
+      <div>
+         <h5><strong>Conclusiones- </strong> Por el momento, Cinema 4D no es el mejor software para hacer Mockups, es complejo y no tiene muy buena resolución de imagen.</h5>
+      </div>
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal1()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">1 / 4</div>
+               <img src="images/img1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">2 / 4</div>
+               <img src="images/img2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">3 / 4</div>
+               <img src="images/img3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">4 / 4</div>
+               <img src="images/img4.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pude Descargar el Software!">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Modelé un cuerpo extraño en muy poco tiempo">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Después de muchos tutoriales, y paciencia, conseguí renderizar un mockup de un manual que necesito para el portafolio.">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Resultado desde Photoshop. A pesar de que fue lento, me voy contenta de poder hacer un mockup personalizado">
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--Amateur-->
+      <div>
+         <h3>Amateur</h3>
+         <div>
+            <h5><strong> Paso 1 - </strong> Modelar dos objetos simples.
+               *objeto por definir
+            </h5>
+            <h5><strong> Paso 2 - </strong> Modelar un objeto complejo. Aprender sobre el “setting” (texturas, luces, etc) y aplicarlas
+               al objeto.
+            </h5>
+            <h5><strong> Paso 3 - </strong> Modelar un ambiente “cool”.
+               *Bonus track (+0.5): Hacer animación simple.
+            </h5>
+         </div>
+      <div class="row">
+         <div class="column">
+            <img src="images/img5.gif" style="width:100%" onclick="openModal2();currentSlide(5)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img6.jpg" style="width:100%" onclick="openModal2();currentSlide(6)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img7.jpg" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img8.jpg" style="width:100%" onclick="openModal2();currentSlide(8)" class="hover-shadow cursor">
+         </div>
+      </div>
+      <div id="myModal2" class="modal">
+         <span class="close cursor" onclick="closeModal2()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">5 / 8</div>
+               <img src="images/img5.gif" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">6 / 8</div>
+               <img src="images/img6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">7 / 8</div>
+               <img src="images/img7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">8 / 8</div>
+               <img src="images/img8.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img5.gif" style="width:100%" onclick="currentSlide(5)" alt="Pude Descargar el Software!">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Modelé un cuerpo extraño en muy poco tiempo">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Después de muchos tutoriales, y paciencia, conseguí renderizar un mockup de un manual que necesito para el portafolio.">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Resultado desde Photoshop. A pesar de que fue lento, me voy contenta de poder hacer un mockup personalizado">
+            </div>
+         </div>
+      </div>
+       </div>
+      <!--Mrs Estética-->
+      <div>
+         <h3>Mrs Estética</h3>
+         <div>
+            <h5><strong> Paso 1 - </strong> Hacer animación simple, sólo de setting, (cambio de luces, etc).</h5>
+            <h5><strong> Paso 2 - </strong> Animación compleja, objetos moviéndose.</h5>
+            <h5><strong> Paso 3 - </strong>  Animación no necesariamente armónica de un cuerpo humano moviéndose.</h5>
+         </div>
+      <div class="row">
+         <div class="column">
+            <img src="images/img9.jpg" style="width:100%" onclick="openModal3();currentSlide(9)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img10.jpg" style="width:100%" onclick="openModal3();currentSlide(10)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img11.jpg" style="width:100%" onclick="openModal3();currentSlide(11)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img12.jpg" style="width:100%" onclick="openModal3();currentSlide(12)" class="hover-shadow cursor">
+         </div>
+      </div>
+      <div id="myModal3" class="modal">
+         <span class="close cursor" onclick="closeModal3()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">9 / 12</div>
+               <img src="images/img9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">10 / 12</div>
+               <img src="images/img10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">11 / 12</div>
+               <img src="images/img11.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">12 / 12</div>
+               <img src="images/img12.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Software download done!">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img10.jpg" style="width:100%" onclick="currentSlide(10)" alt="I modeled a strange moving body from a Youtube Tutorial.">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Traté de hacer un mockup pero">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern ">
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--Diosa del 3D-->
+      <div>
+         <h3>Diosa del 3D</h3>
+         <div>
+            <h5><strong> Paso 1 - </strong>  Animación armónica de un cuerpo humano moviéndose.</h5>
+            <h5><strong> Paso 2 - </strong>  Animación de 10 segundos, que sea visualmente agradable.</h5>
+            <h5><strong> Paso 3 - </strong>  Generar una animación decente para el portafolio.</h5>
+         </div>
+      </div>
+      <div class="row">
+         <div class="column">
+            <img src="images/img13.jpg" style="width:100%" onclick="openModal4();currentSlide(13)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img14.jpg" style="width:100%" onclick="openModal4();currentSlide(14)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img15.jpg" style="width:100%" onclick="openModal4();currentSlide(15)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+            <img src="images/img16.jpg" style="width:100%" onclick="openModal4();currentSlide(16)" class="hover-shadow cursor">
+         </div>
+      </div>
+      <div id="myModal4" class="modal">
+         <span class="close cursor" onclick="closeModal4()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">13 / 16</div>
+               <img src="images/img13.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">14 / 16</div>
+               <img src="images/img14.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">15 / 16</div>
+               <img src="images/img15.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">16 / 16</div>
+               <img src="images/img16.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Software download done!">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img14.jpg" style="width:100%" onclick="currentSlide(14)" alt="I modeled a strange moving body from a Youtube Tutorial.">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img15.jpg" style="width:100%" onclick="currentSlide(15)" alt="Traté de hacer un mockup pero">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/img16.jpg" style="width:100%" onclick="currentSlide(16)" alt="Northern Lights">
+            </div>
+         </div>
+      </div>
+      </div>
+      <script>
+         function openModal1() {
+           document.getElementById("myModal").style.display = "block";
+         }
+         
+         function closeModal1() {
+           document.getElementById("myModal").style.display = "none";
+         }
+              function openModal2() {
+           document.getElementById("myModal2").style.display = "block";
+         }
+         
+         function closeModal2() {
+           document.getElementById("myModal2").style.display = "none";
+         }
+             function openModal3() {
+           document.getElementById("myModal3").style.display = "block";
+         }
+         
+         function closeModal3() {
+           document.getElementById("myModal3").style.display = "none";
+         }
+             function openModal4() {
+           document.getElementById("myModal4").style.display = "block";
+         }
+         
+         function closeModal4() {
+           document.getElementById("myModal4").style.display = "none";
+         }
+         
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("demo");
+           var captionText = document.getElementById("caption");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 1; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " active";
+           captionText.innerHTML = dots[slideIndex-1].alt;
+         }
+      </script>
+   </body>
+</html>

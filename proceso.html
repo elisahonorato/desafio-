@@ -37,19 +37,19 @@
       <div id="myModal" class="modal">
          <span class="close cursor" onclick="closeModal1()">&times;</span>
          <div class="modal-content">
-            <div class="mySlides">
+            <div class="mySlides1">
                <div class="numbertext">1 / 4</div>
                <img src="images/img1.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides1">
                <div class="numbertext">2 / 4</div>
                <img src="images/img2.gif" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides1">
                <div class="numbertext">3 / 4</div>
                <img src="images/img3.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides1">
                <div class="numbertext">4 / 4</div>
                <img src="images/img4.jpg" style="width:100%">
             </div>
@@ -104,19 +104,19 @@
       <div id="myModal2" class="modal">
          <span class="close cursor" onclick="closeModal2()">&times;</span>
          <div class="modal-content">
-            <div class="mySlides">
+            <div class="mySlides2">
                <div class="numbertext">5 / 8</div>
                <img src="images/img5.gif" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides2">
                <div class="numbertext">6 / 8</div>
                <img src="images/img6.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides2">
                <div class="numbertext">7 / 8</div>
                <img src="images/img7.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides2">
                <div class="numbertext">8 / 8</div>
                <img src="images/img8.gif" style="width:100%">
             </div>
@@ -165,19 +165,19 @@
       <div id="myModal3" class="modal">
          <span class="close cursor" onclick="closeModal3()">&times;</span>
          <div class="modal-content">
-            <div class="mySlides">
+            <div class="mySlides3">
                <div class="numbertext">9 / 12</div>
                <img src="images/img9.gif" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides3">
                <div class="numbertext">10 / 12</div>
                <img src="images/img10.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides3">
                <div class="numbertext">11 / 12</div>
                <img src="images/img11.gif" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides3">
                <div class="numbertext">12 / 12</div>
                <img src="images/img12.jpg" style="width:100%">
             </div>
@@ -227,19 +227,19 @@
       <div id="myModal4" class="modal">
          <span class="close cursor" onclick="closeModal4()">&times;</span>
          <div class="modal-content">
-            <div class="mySlides">
+            <div class="mySlides4">
                <div class="numbertext">13 / 16</div>
                <img src="images/img13.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides4">
                <div class="numbertext">14 / 16</div>
                <img src="images/img14.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides4">
                <div class="numbertext">15 / 16</div>
                <img src="images/img15.jpg" style="width:100%">
             </div>
-            <div class="mySlides">
+            <div class="mySlides4">
                <div class="numbertext">16 / 16</div>
                <img src="images/img16.jpg" style="width:100%">
             </div>
@@ -306,18 +306,27 @@
          
          function showSlides(n) {
            var i;
-           var slides = document.getElementsByClassName("mySlides");
+           var slides = document.getElementsByClassName("mySlides1");
+           var slides2 = document.getElementsByClassName("mySlides2");
+           var slides3 = document.getElementsByClassName("mySlides3");
+           var slides4 = document.getElementsByClassName("mySlides4");
            var dots = document.getElementsByClassName("demo");
            var captionText = document.getElementById("caption");
            if (n > slides.length) {slideIndex = 1}
-           if (n < 1) {slideIndex = slides.length}
+           if (n < 0) {slideIndex = slides.length}
            for (i = 0; i < slides.length; i++) {
                slides[i].style.display = "none";
+               slides2[i].style.display = "none";
+               slides3[i].style.display = "none";
+               slides4[i].style.display = "none";
            }
            for (i = 1; i < dots.length; i++) {
-               dots[i].className = dots[i].className.replace(" active", "");
+               dots[i].className = dots[i].className.replace(" active");
            }
            slides[slideIndex-1].style.display = "block";
+           slides2[slideIndex-1].style.display = "block";
+           slides3[slideIndex-1].style.display = "block";
+           slides4[slideIndex-1].style.display = "block";
            dots[slideIndex-1].className += " active";
            captionText.innerHTML = dots[slideIndex-1].alt;
          }

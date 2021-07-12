@@ -1,0 +1,87 @@
+/* Gallery Container */
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "gallery-p gallery-p gallery-p gallery-p"
+    "img1 img2 img3 img4"   
+}
+#index-gallery .gallery-img{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+/* Images */
+#index-gallery h2{
+    grid-area: gallery-h2;
+    font-family: "Minion Pro";
+    color:  white;
+    width:55vw;
+    font-size: 4vh;
+    display: center;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+#index-gallery p{
+    grid-area: gallery-p;
+}
+#index-gallery .img1{
+    grid-area: img1;
+    background-image: url("../css/img/thumbs/img1.jpg");
+}
+#index-gallery .img2{
+    grid-area: img2;
+    background-image: url("../css/img/thumbs/img2.gif");
+}
+#index-gallery .img3{
+    grid-area: img3;
+    background-image: url("../css/img/thumbs/img3.jpg");
+}
+#index-gallery .img4{
+    grid-area: img4;
+    background-image: url("../css/img/thumbs/img4.jpg");
+}
+/* Gallery image titles */
+.gallery-img div{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.gallery-img div:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}
+/* Popup Window */
+.img-window {
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.img-window img {
+max-height: 80vh;
+max-width: 80vw;
+}

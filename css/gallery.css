@@ -33,19 +33,19 @@
 }
 #index-gallery .img1{
     grid-area: img1;
-    background-image: url("../css/img/thumbs/img1.jpg");
+    background-image: url("../img/thumbs/img1.jpg");
 }
 #index-gallery .img2{
     grid-area: img2;
-    background-image: url("../css/img/thumbs/img2.gif");
+    background-image: url("../img/thumbs/img2.gif");
 }
 #index-gallery .img3{
     grid-area: img3;
-    background-image: url("../css/img/thumbs/img3.jpg");
+    background-image: url("../img/thumbs/img3.jpg");
 }
 #index-gallery .img4{
     grid-area: img4;
-    background-image: url("../css/img/thumbs/img4.jpg");
+    background-image: url("../img/thumbs/img4.jpg");
 }
 /* Gallery image titles */
 .gallery-img div{
@@ -70,7 +70,7 @@
 /* Popup Window */
 .img-window {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-color: rgba(0,0,0,0.8);
     position: fixed;
     top: 0;
@@ -84,4 +84,41 @@
 .img-window img {
 max-height: 80vh;
 max-width: 80vw;
+}
+/* Next Image */
+.img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top:48vh;
+    z-index:500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.img-btn-next:hover {
+    opacity:0.8;
+
+}
+.img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top:48vh;
+    z-index:500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.img-btn-prev:hover {
+    opacity:0.8;
+
 }

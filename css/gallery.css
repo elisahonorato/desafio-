@@ -7,7 +7,7 @@
     grid-template-areas: 
     "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
     "gallery-p gallery-p gallery-p gallery-p"
-    "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12" "img13 img14 img15 img16"
+    "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12" "img13 img14 img15 img16";
 }
 #index-gallery .gallery-img{
     width: 100%;
@@ -33,7 +33,7 @@
 }
 #index-gallery .img1{
     grid-area: img1;
-    background-image: url("../img/thumbs/img1.jpg");
+    background-image: url("../img/thumbs/img1.gif");
 }
 #index-gallery .img2{
     grid-area: img2;
@@ -41,11 +41,11 @@
 }
 #index-gallery .img3{
     grid-area: img3;
-    background-image: url("../img/thumbs/img3.jpg");
+    background-image: url("../img/thumbs/img3.gif");
 }
 #index-gallery .img4{
     grid-area: img4;
-    background-image: url("../img/thumbs/img4.jpg");
+    background-image: url("../img/thumbs/img4.gif");
 }
 #index-gallery .img5{
     grid-area: img5;
@@ -53,11 +53,11 @@
 }
 #index-gallery .img6{
     grid-area: img6;
-    background-image: url("../img/thumbs/img6.jpg");
+    background-image: url("../img/thumbs/img6.gif");
 }
 #index-gallery .img7{
     grid-area: img7;
-    background-image: url("../img/thumbs/img7.jpg");
+    background-image: url("../img/thumbs/img7.gif");
 }
 #index-gallery .img8{
     grid-area: img8;
@@ -77,15 +77,15 @@
 }
 #index-gallery .img12{
     grid-area: img12;
-    background-image: url("../img/thumbs/img12.jpg");
+    background-image: url("../img/thumbs/img12.gif");
 }
 #index-gallery .img13{
     grid-area: img13;
-    background-image: url("../img/thumbs/img13.jpg");
+    background-image: url("../img/thumbs/img13.gif");
 }
 #index-gallery .img14{
     grid-area: img14;
-    background-image: url("../img/thumbs/img14.jpg");
+    background-image: url("../img/thumbs/img14.gif");
 }
 #index-gallery .img15{
     grid-area: img15;
@@ -93,7 +93,7 @@
 }
 #index-gallery .img16{
     grid-area: img16;
-    background-image: url("../img/thumbs/img16.jpg");
+    background-image: url("../img/thumbs/img16.gif");
 }
 
 /* Gallery image titles */
@@ -133,6 +133,27 @@
 .img-window img {
 max-height: 80vh;
 max-width: 80vw;
+}
+#txt {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top:48vh;
+    z-index:500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.text{
+    opacity: 0%;
+}
+#txt h1{
+    color: aquamarine;
+    opacity: 100%;
+   
 }
 /* Next Image */
 .img-btn-next {

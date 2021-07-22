@@ -104,7 +104,9 @@ opacity: 100%;
 .wrapper-gallery{
   margin: 0 20vw;
 }
-
+.container{
+  position: absolute;
+}
 
 
 

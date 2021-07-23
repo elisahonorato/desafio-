@@ -20,16 +20,23 @@
 /* Images */
 #index-gallery h2{
     grid-area: gallery-h2;
-    font-family: "Minion Pro";
+    font-family: 'Josefin Sans', sans-serif;
     color:  white;
     width:55vw;
     font-size: 4vh;
-    display: center;
     margin: 0 auto;
     margin-top: 10%;
+    text-align: center;
+    font-weight:bold;
 }
+#index-gallery #bolder{
+    font-style: italic; 
+    font-weight:bolder; 
+    margin: 0 auto;
+  }
 #index-gallery p{
     grid-area: gallery-p;
+    text-align: center;
 }
 #index-gallery .img1{
     grid-area: img1;

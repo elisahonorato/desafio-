@@ -17,22 +17,17 @@ body {
     color:  white;
 }
 h2{
- font-family: "Minion Pro";
+ font-family: 'Josefin Sans', sans-serif;
     color:  white;
     width:55vw;
     font-size: 13vh;
     display: center;
     margin: 0 auto;
 }
-h4{
-  font-family: "Minion Pro";
-     color:  white;
-     width:55vw;
-     font-size: 4vh;
-     display: center;
-     margin: 0 auto;
-     margin-top: 10%;
- }
+h1 {
+  text-align: center;
+}
+
 h5{
   margin-top: 2%;
 }
@@ -47,12 +42,20 @@ main video{
 
 }
 /* Page */
+#container{
+	height: auto;
+  width: 100vw;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 0 auto;
+}
 #header-main nav{
   display: grid;
   grid-template-columns: 200px 3fr;
   grid-template-rows: auto;
   padding-bottom: 60px;
   margin-right: 30px;
+
 }
 #header-main nav img{
   height: 50px;
@@ -92,11 +95,12 @@ opacity: 100%;
   text-align: center;
   margin: auto;
   color: black;
+  padding: 50px;
 
 }
 
 .row {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   background-color: rgb(0,0,0,90%);
 
 }
@@ -104,9 +108,7 @@ opacity: 100%;
 .wrapper-gallery{
   margin: 0 20vw;
 }
-.container{
-  position: absolute;
-}
+
 
 
 

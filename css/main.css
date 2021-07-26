@@ -33,6 +33,7 @@ h5{
   text-align: center;
   font-size: 3vh;
   font-weight: normal;
+  z-index: 100;
 }
 main video{
 	position: absolute;

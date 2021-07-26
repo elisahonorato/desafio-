@@ -1,0 +1,122 @@
+
+:root {
+    --gray: rgb(150,150,150);
+    --gray2: rgb(20,20,20);
+    --black: rgb(0,0,0);
+    --white: rgb(255,255,255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* General */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background:  black;
+    color:  white;
+}
+h2{
+ font-family: 'Josefin Sans', sans-serif;
+    color:  white;
+    width:55vw;
+    font-size: 13vh;
+    display: center;
+    margin: 0 auto;
+}
+h1 {
+  text-align: center;
+}
+
+h5{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 3vh;
+  font-weight: normal;
+  z-index: 100;
+}
+main video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+
+}
+/* Page */
+#container{
+	height: auto;
+  width: 100vw;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 0 auto;
+}
+#header-main nav{
+  display: grid;
+  grid-template-columns: 200px 3fr;
+  grid-template-rows: auto;
+  padding-bottom: 60px;
+  margin-right: 30px;
+
+}
+#header-main nav img{
+  height: 50px;
+  margin: 25px 0;
+  border-radius: 50px;
+  opacity: 50%;
+}
+#header-main nav img:hover{
+  opacity: 100%; 
+}
+#header-main nav ul{
+  justify-self: end;
+}
+#header-main nav ul li{
+  display: inline-block;
+  list-style: none;
+  justify-self: end;
+  margin: 40px 0px 40px 30px;
+}
+#header-main nav ul li a{
+  color: #ffffff;
+font-family:'Josefin Sans', sans-serif;
+text-decoration: none;
+font-size: 2vh;
+opacity: 50%;
+}
+#header-main nav ul li a:hover{
+color: #ffffff;
+font-family:'Josefin Sans', sans-serif;
+text-decoration: none;
+font-size: 2vh;
+opacity: 100%;
+}
+/* Chart */
+
+.chart {
+  text-align: center;
+  margin: auto;
+  color: black;
+  padding: 50px;
+
+}
+
+.row {
+  margin-bottom: 100px;
+  background-color: rgb(0,0,0,90%);
+
+}
+/* Wrappers */
+.wrapper-gallery{
+  margin: 0 20vw;
+}
+
+
+
+
+
+
+
+

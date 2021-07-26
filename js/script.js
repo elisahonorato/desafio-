@@ -1,21 +1,21 @@
 let labels0 = ["Horas", "Animo", "Rendimiento", "Clima", "Deporte", "Sueño"];
 
-let labels1 = ["10/04", "12/04", "16/04", "30/04", "10/05", "10/04", "12/04", "16/04", "30/04", "10/05", "10/05", "10/04", "12/04", "16/04", "30/04", "01/07"];
-let labels2 = ["10/04 imput", "10/04 output", "12/04 imput", "12/04 output", "16/04 imput", "16/04 output", "27/04 imput", "06/05 output", "10/05 imput", "10/05 output", "10/04 imput", "10/04 output", "12/04 imput", "12/04 output", "16/04 imput", "16/04 output", "27/04 imput", "06/05 output", "10/05 imput", "10/05 output", "10/05 imput", "10/05 output", "10/04 imput", "10/04 output", "12/04 imput", "12/04 output", "16/04 imput", "16/04 output", "27/04 imput", "06/05 output", "01/07 imput", "01/07 output"];
+let labels1 = ["10/04", "12/04", "16/04", "21/04", "26/04", "28/04", "06/05", "10/05", "14/05", "20/05", "24/05", "28/05", "04/06", "10/06", "19/06", "23/06"];
+let labels2 = ["10/04 imput", "10/04 output", "12/04 imput", "12/04 output", "16/04 imput", "16/04 output", "21/04 imput", "21/04 output", "26/04 imput", "26/04 output", "28/04 imput", "28/04 output", "06/05 imput", "06/05 output", "10/05 imput", "10/05 output", "14/05 imput", "14/05 output", "20/05 imput", "20/05 output", "24/05 imput", "24/05 output", "28/05 imput", "28/05 output", "04/06 imput", "04/06 output", "10/06 imput", "10/06 output", "19/06 imput", "19/06 output", "23/06 imput", "23/06 output"];
 
-let horas1 = [10, 6, 2, 16, 4, 10, 6, 2, 16, 4, 4, 10, 6, 2, 16, 4];
+let horas1 = [10, 2, 10, 4, 4, 10, 6, 8, 5, 10, 4, 10, 3, 10, 4, 1];
 let horas2 = [10, 10, 6, 6, 2, 2, 5, 10, 2, 2, 10, 10, 6, 6, 2, 2, 5, 10, 2, 2, 2, 2, 10, 10, 6, 6, 2, 2, 5, 10, 2, 2];
 
-let animos1 = [6, 3.5, 2.5, 5, 8, 6, 3.5, 2.5, 5, 8, 8, 6, 3.5, 2.5, 5, 8];
+let animos1 = [2, 6, 3, 2, 8, 1, 2, 6, 7, 6, 6, 2, 6, 3, 5, 9];
 let animos2 = [8, 4, 7, 2, 5, 0, 10, 4, 7, 9, 8, 4, 7, 2, 5, 0, 10, 4, 7, 9, 7, 9, 8, 4, 7, 2, 5, 0, 10, 4, 7, 9];
 
-let rendimientos1 = [6, 10, 1, 4, 9, 6, 10, 1, 4, 9, 9, 6, 10, 1, 4, 9];
+let rendimientos1 = [2, 4, 1, 3, 9, 6, 10, 1, 5, 9, 9, 7, 10, 9, 10, 10];
 let rendimientos2 = [0, 6, 7, 3, 0, 0, 2, 6, 7, 2, 0, 6, 7, 3, 0, 0, 2, 6, 7, 2, 7, 2, 0, 6, 7, 3, 3, 6, 2, 8, 7, 2]
 
-let climas1 = [7, 5, 4, 3, 4, 7, 5, 4, 3, 4, 4, 7, 5, 4, 3, 4];
+let climas1 = [7, 6, 4, 3, 6, 5, 3, 4, 3, 2, 1, 3, 1, 1, 2, 1];
 let climas2 = [7, 7, 5, 5, 4, 4, 4, 0, 4, 4, 7, 7, 5, 5, 4, 4, 4, 0, 4, 4, 4, 4, 7, 7, 5, 5, 4, 4, 4, 0, 4, 4];
 
-let deportes1 = [0, 4, 0, 7, 8, 0, 4, 0, 7, 8, 8, 0, 4, 0, 7, 8];
+let deportes1 = [0, 6, 0, 7, 8, 0, 2, 6, 7, 7, 7, 0, 7, 5, 7, 8];
 let deportes2 = [0, 0, 4, 4, 0, 0, 9, 5, 10, 6, 0, 0, 4, 4, 0, 0, 9, 5, 10, 6, 10, 6, 0, 0, 4, 4, 0, 0, 9, 5, 10, 6];
 
 let suenos1 = [8, 7, 5, 5, 6, 8, 7, 5, 5, 6, 6, 8, 7, 5, 5, 6];
@@ -114,7 +114,7 @@ let chart4 = new Chart(myChart4, {
     },
     options: {
         title: {
-            text: "Rendimiento y Animo",
+            text: "Rendimiento antes y después de una fecha",
             display: true
         }
     }
@@ -159,7 +159,7 @@ let chart5 = new Chart(myChart5, {
     },
     options: {
         title: {
-            text: "Rendimiento y Animo",
+            text: "Rendimiento, animo y sueño",
             display: true
         }
     }
